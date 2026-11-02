@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: questlab
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/questlab
+    username: questlab
+    password: questlab_dev
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true

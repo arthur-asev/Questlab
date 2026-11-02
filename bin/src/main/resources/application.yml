@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: questlab
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/questlab}
+    username: ${DB_USERNAME:questlab}
+    password: ${DB_PASSWORD:questlab_dev}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+
+server:
+  port: ${SERVER_PORT:8080}
